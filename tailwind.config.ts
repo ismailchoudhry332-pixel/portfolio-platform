@@ -11,7 +11,9 @@ const config: Config = {
       colors: {
         background: "#FAFAFA",
         foreground: "#1A1A1A",
+        "foreground-muted": "#2A2A2A",
         accent: "#666666",
+        "accent-light": "#999999",
         border: "#E5E5E5",
       },
       fontFamily: {
@@ -29,6 +31,9 @@ const config: Config = {
       maxWidth: {
         prose: "680px",
         layout: "1200px",
+      },
+      letterSpacing: {
+        tight: "-0.015em",
       },
     },
   },

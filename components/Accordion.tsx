@@ -18,20 +18,22 @@ export default function Accordion({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-t border-border py-12">
+    <div className="border-t border-border py-16">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full text-left"
+        className="w-full text-left group cursor-pointer"
         aria-expanded={isOpen}
       >
-        <div className="flex justify-between items-start gap-8">
+        <div className="flex justify-between items-start gap-12">
           <div className="flex-1">
-            <h3 className="text-2xl mb-4">{title}</h3>
-            <p className="text-accent mb-2">{problemSummary}</p>
-            <p className="text-foreground">{outcomeSummary}</p>
+            <h3 className="text-2xl mb-5 group-hover:text-accent transition-colors duration-150">{title}</h3>
+            <p className="text-accent mb-3 text-lg leading-relaxed">{problemSummary}</p>
+            <p className="text-foreground-muted text-lg leading-relaxed">{outcomeSummary}</p>
           </div>
-          <div className="text-2xl text-accent transition-transform duration-200 ease-out" style={{ transform: isOpen ? "rotate(45deg)" : "rotate(0deg)" }}>
-            +
+          <div className="flex-shrink-0 mt-1">
+            <span className="text-sm text-accent-light group-hover:text-accent transition-colors duration-150">
+              {isOpen ? "Close" : "Expand"}
+            </span>
           </div>
         </div>
       </button>
@@ -43,7 +45,7 @@ export default function Accordion({
           opacity: isOpen ? 1 : 0,
         }}
       >
-        <div className="pt-8">{children}</div>
+        <div className="pt-12">{children}</div>
       </div>
     </div>
   );
