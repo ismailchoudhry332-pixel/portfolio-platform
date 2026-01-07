@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Platform — Ismail Chaudhry
 
-## Getting Started
+Personal portfolio for an Operations, Systems & Automation Engineer. Content-first, judgment-driven site built on the principle: **Interaction exists to reveal meaning — not to impress.**
 
-First, run the development server:
+## Phase 1 Complete — Foundation
+
+All core pages built with placeholder content:
+- Home (hero, featured case study preview, How I Work)
+- Case Studies (flagship preview + 2 accordion case studies)
+- Case Studies / Flagship (dedicated deep-dive page)
+- About (experience section with 3 placeholder entries)
+- Work With Me (Calendly embed placeholder)
+
+## Tech Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **Styling:** Tailwind CSS v4 (CSS-based config)
+- **Content:** MDX support configured
+- **Hosting:** Vercel
+
+## Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy to Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Option 1: Deploy via Vercel CLI
+```bash
+npm install -g vercel
+vercel
+```
 
-## Learn More
+### Option 2: Deploy via Vercel Dashboard
+1. Push this repo to GitHub
+2. Go to [vercel.com/new](https://vercel.com/new)
+3. Import your GitHub repository
+4. Vercel will auto-detect Next.js and deploy
 
-To learn more about Next.js, take a look at the following resources:
+No environment variables needed for Phase 1.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+/app
+  /page.tsx              → Home
+  /case-studies
+    /page.tsx            → Case Studies (with accordions)
+    /flagship
+      /page.tsx          → Flagship case study
+  /about
+    /page.tsx            → About
+  /work-with-me
+    /page.tsx            → Work With Me
 
-## Deploy on Vercel
+/components
+  Nav.tsx                → Global navigation
+  CTA.tsx                → "Book a fit check" button
+  Accordion.tsx          → Case study accordions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+/content                 → Empty (for future MDX files)
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Next Steps (Phase 2)
+
+1. Replace placeholder content with final case studies
+2. Add real Calendly embed code in `/app/work-with-me/page.tsx`
+3. Polish typography, spacing, transitions
+4. Add Plausible analytics
+
+## Design System
+
+- **Colors:** #FAFAFA background, #1A1A1A text, #666666 accent, #E5E5E5 borders
+- **Typography:** Georgia serif (headings), system sans-serif (body)
+- **Spacing:** 80-120px vertical rhythm on desktop
+- **Breakpoint:** 768px for mobile
+- **Max widths:** 680px prose, 1200px layout
+
+## Content Editing (Post-Phase 1)
+
+All content can be edited directly in the page files:
+- `/app/page.tsx` — Home page content
+- `/app/case-studies/page.tsx` — Case studies index
+- `/app/case-studies/flagship/page.tsx` — Flagship case study
+- `/app/about/page.tsx` — About page with experience section
+- `/app/work-with-me/page.tsx` — Work With Me page
+
+Future: Move content to MDX files in `/content/` for easier editing.
+
+---
+
+Built with [Claude Code](https://claude.com/claude-code)
