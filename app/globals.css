@@ -15,9 +15,10 @@
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* Dot-matrix background pattern */
+    /* Fixed dot-matrix background pattern for depth */
     background-image: radial-gradient(rgba(0, 255, 255, 0.05) 1px, transparent 1px);
     background-size: 24px 24px;
+    background-attachment: fixed;
   }
 
   h1,
