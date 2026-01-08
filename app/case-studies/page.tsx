@@ -54,6 +54,12 @@ export default function CaseStudies() {
             title="Multi-Company Revenue Tracking"
             problemSummary="Revenue reporting across 3 entities required manual consolidation, creating 2-week delays."
             outcomeSummary="Built unified dashboard that provides real-time revenue visibility across all entities."
+            delivered={[
+              "Centralized data pipeline",
+              "Automated reconciliation system",
+              "Real-time revenue dashboard",
+              "Multi-entity reporting interface"
+            ]}
           >
             <div className="space-y-8">
               <div>
@@ -104,6 +110,12 @@ export default function CaseStudies() {
             title="Client Onboarding Workflow Automation"
             problemSummary="Onboarding required 15 manual steps across 3 people, creating bottlenecks and inconsistency."
             outcomeSummary="Automated workflow reduced onboarding time from 5 days to 2 hours."
+            delivered={[
+              "Automated workflow engine",
+              "Multi-step onboarding system",
+              "Inter-department integration",
+              "Automated notification system"
+            ]}
           >
             <div className="space-y-8">
               <div>

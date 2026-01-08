@@ -6,6 +6,7 @@ interface AccordionProps {
   title: string;
   problemSummary: string;
   outcomeSummary: string;
+  delivered?: string[];
   children: React.ReactNode;
 }
 
@@ -13,6 +14,7 @@ export default function Accordion({
   title,
   problemSummary,
   outcomeSummary,
+  delivered,
   children,
 }: AccordionProps) {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,9 +33,9 @@ export default function Accordion({
             <p className="text-lg leading-relaxed" style={{ color: 'rgba(26, 26, 26, 0.95)' }}>{outcomeSummary}</p>
           </div>
           <div className="flex-shrink-0 mt-1">
-            <span 
-              className="text-2xl text-accent-light group-hover:text-accent transition-all duration-200" 
-              style={{ 
+            <span
+              className="text-2xl text-accent-light group-hover:text-accent transition-all duration-200"
+              style={{
                 display: 'inline-block',
                 transform: isOpen ? 'rotate(45deg)' : 'rotate(0deg)'
               }}
@@ -52,6 +54,21 @@ export default function Accordion({
         }}
       >
         <div className="pt-12 border-l-2 border-[#DDDDDD] pl-6">
+          {/* Delivered Block */}
+          {delivered && delivered.length > 0 && (
+            <div className="mb-8 pb-8 border-b border-[#E0E0E0]">
+              <h4 className="text-lg font-bold mb-4">Delivered</h4>
+              <ul className="space-y-2 text-base ml-6">
+                {delivered.map((item, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="mr-3 text-accent">-</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {children}
         </div>
       </div>

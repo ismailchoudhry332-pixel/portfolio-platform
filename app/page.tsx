@@ -68,6 +68,63 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Systems I've Shipped - 80px margin */}
+      <section className="max-w-[1200px] mx-auto px-6 py-20 mt-20 border-t border-[#E0E0E0]">
+        <div className="max-w-[680px]">
+          <h2 className="text-3xl mb-8 font-bold">Systems I've Shipped</h2>
+          <p className="text-lg mb-12 text-accent">
+            Not concepts. Not experiments. Systems used in live operations.
+          </p>
+
+          <div className="space-y-8">
+            <div>
+              <p className="text-lg mb-2">
+                • Pricing & quotation engine for a UK transport operation
+              </p>
+              <p className="text-base text-accent-light ml-4 leading-relaxed">
+                → Removed manual quoting, enforced pricing parity, exposed margin leakage
+              </p>
+            </div>
+
+            <div>
+              <p className="text-lg mb-2">
+                • Operations admin panel for non-technical teams
+              </p>
+              <p className="text-base text-accent-light ml-4 leading-relaxed">
+                → Business users controlled logic without developer dependency
+              </p>
+            </div>
+
+            <div>
+              <p className="text-lg mb-2">
+                • Workflow automation integrated with Monday.com
+              </p>
+              <p className="text-base text-accent-light ml-4 leading-relaxed">
+                → Eliminated manual handoffs between sales and operations
+              </p>
+            </div>
+
+            <div>
+              <p className="text-lg mb-2">
+                • Data dashboards for operational decision-making
+              </p>
+              <p className="text-base text-accent-light ml-4 leading-relaxed">
+                → Replaced spreadsheet-driven guesswork with live visibility
+              </p>
+            </div>
+
+            <div>
+              <p className="text-lg mb-2">
+                • Internal tools for call-centre & service operations
+              </p>
+              <p className="text-base text-accent-light ml-4 leading-relaxed">
+                → Reduced reliance on human memory at handoff points
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How I Work - 80px margin */}
       <section className="max-w-[1200px] mx-auto px-6 py-20 mt-20 border-t border-[#E0E0E0]">
         <div className="max-w-[680px]">

@@ -22,6 +22,33 @@ export default function FlagshipCaseStudy() {
           Fleet Compliance System — Removing Manual Failure Points
         </h1>
 
+        {/* Delivered Block */}
+        <div className="mb-12 pb-8 border-b border-[#E0E0E0]">
+          <h3 className="text-lg font-bold mb-4">Delivered</h3>
+          <ul className="space-y-2 text-base ml-6">
+            <li className="flex items-start">
+              <span className="mr-3 text-accent">-</span>
+              <span>Automated compliance tracking system</span>
+            </li>
+            <li className="flex items-start">
+              <span className="mr-3 text-accent">-</span>
+              <span>Email/SMS alert system with deadline monitoring</span>
+            </li>
+            <li className="flex items-start">
+              <span className="mr-3 text-accent">-</span>
+              <span>Fleet-wide dashboard with compliance status</span>
+            </li>
+            <li className="flex items-start">
+              <span className="mr-3 text-accent">-</span>
+              <span>Mobile-friendly interface for field updates</span>
+            </li>
+            <li className="flex items-start">
+              <span className="mr-3 text-accent">-</span>
+              <span>Complete audit trail system</span>
+            </li>
+          </ul>
+        </div>
+
         {/* Context */}
         <section className="mb-16">
           <h2 className="text-2xl mb-4">Context</h2>
