@@ -15,6 +15,9 @@
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Dot-matrix background pattern */
+    background-image: radial-gradient(rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 24px 24px;
   }
 
   h1,
@@ -42,9 +45,62 @@
   button {
     font-family: inherit;
   }
+}
 
-  /* Terminal-style container utility */
+@layer components {
+
+  /* Terminal-style border */
   .terminal-border {
     border: 1px solid #333;
+  }
+
+  /* Bento Box container - dark glass effect */
+  .bento-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid #333;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .bento-box:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+    border-color: #444;
+  }
+
+  /* 12-column grid utility */
+  .grid-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Typewriter animation */
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink-caret {
+
+    from,
+    to {
+      border-color: transparent;
+    }
+
+    50% {
+      border-color: #00FFFF;
+    }
+  }
+
+  .typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #00FFFF;
+    animation: typewriter 3s steps(40, end), blink-caret 0.75s step-end infinite;
   }
 }
