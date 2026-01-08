@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 export const metadata = {
   title: "Work With Me | Ismail Chaudhry",
   description: "Book a 15-minute fit check to discuss execution challenges and see if we're a good match.",
@@ -5,7 +7,12 @@ export const metadata = {
 
 export default function WorkWithMe() {
   return (
-    <div className="min-h-screen">
+    <>
+      <Script
+        src="https://assets.calendly.com/assets/external/widget.js"
+        strategy="lazyOnload"
+      />
+      <div className="min-h-screen">
       <div className="max-w-[680px] mx-auto px-6 pt-[120px] pb-24">
         <h1 className="text-6xl mb-20">Work With Me</h1>
 
@@ -152,5 +159,20 @@ export default function WorkWithMe() {
         </section>
       </div>
     </div>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/>
+    <Script id="calendly-badge" strategy="afterInteractive">
+      {`window.onload = function() {
+        if (window.Calendly) {
+          Calendly.initBadgeWidget({
+            url: 'https://calendly.com/ismailchoudhry332?hide_landing_page_details=1&hide_gdpr_banner=1',
+            text: 'Book a fit check',
+            color: '#1A1A1A',
+            textColor: '#FAFAFA',
+            branding: false
+          });
+        }
+      }`}
+    </Script>
+    </>
   );
 }

@@ -38,24 +38,23 @@ export default function Home() {
           {/* Featured block with left border and background */}
           <div className="bg-[#F8F8F8] border-l-2 border-[#DDDDDD] pl-8 pr-8 py-10 -ml-2">
             <h2 className="text-4xl mb-6">
-              Fleet Compliance System — Removing Manual Failure Points
+              Turning Pricing From a Bottleneck Into an Operational System
             </h2>
             <p className="text-lg mb-10 leading-relaxed">
-              Manual compliance logs were creating safety risk across 18 vehicles.
-              Built automated tracking system that reduced violations by 87%.
+              Pricing logic was locked in developer-managed code. Operational teams were accountable for outcomes but had no control over the logic producing them.
             </p>
             <ul className="space-y-4 mb-12 ml-6">
               <li className="flex items-start">
                 <span className="mr-4 text-accent">•</span>
-                <span className="text-lg">87% reduction in compliance violations</span>
+                <span className="text-lg">Lead-to-quote time dropped from hours to seconds</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-4 text-accent">•</span>
-                <span className="text-lg">12 hours/week saved on manual logging</span>
+                <span className="text-lg">~40% operational capacity increase with same headcount</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-4 text-accent">•</span>
-                <span className="text-lg">Zero safety incidents in 6 months post-launch</span>
+                <span className="text-lg">Pricing parity enforced — identical journeys, identical prices</span>
               </li>
             </ul>
             <Link
