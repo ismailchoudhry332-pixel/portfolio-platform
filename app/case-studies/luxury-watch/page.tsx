@@ -178,9 +178,7 @@ export default function LuxuryWatchCaseStudy() {
                     <p className="text-xl mb-8 text-foreground-muted">
                         Need a similar solution for your business?
                     </p>
-                    <button className="inline-block px-10 py-4 bg-accent-cyan text-background font-mono font-bold hover:bg-accent-purple transition-colors duration-200">
-                        Audit My System — Book a Fit Check
-                    </button>
+                    <CTA text="Audit My System — Book a Fit Check" className="bg-accent-cyan text-background border-accent-cyan hover:bg-accent-purple hover:border-accent-purple font-mono font-bold" />
                 </div>
             </section>
         </div>

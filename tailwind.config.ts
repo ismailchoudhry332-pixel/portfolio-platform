@@ -18,6 +18,8 @@ const config: Config = {
         "accent-purple": "#BB86FC",
         border: "#333333",
         "border-light": "#444444",
+        "carolean-red": "#D31E40",
+        "carolean-navy": "#2C3E6E",
       },
       fontFamily: {
         sans: [
