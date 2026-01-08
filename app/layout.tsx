@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Newsreader } from "next/font/google";
+import { Newsreader, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -8,15 +8,21 @@ const newsreader = Newsreader({
   subsets: ["latin"],
   variable: "--font-newsreader",
   display: "swap",
-  style: ["normal", "italic"], // Load italic weights too
+  style: ["normal", "italic"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Ismail Chaudhry — Operations, Systems & Automation Engineer",
-  description: "Operations, Systems & Automation Engineer focused on preserving intent from idea to implementation — so execution doesn't drift.",
+  title: "Operations, Systems & Automation Engineer | Portfolio of Ismail Chaudhry",
+  description: "Systems Engineer specializing in Operational Automation and Business Logic. Preserving intent from idea to implementation — Zero Drift.",
   openGraph: {
-    title: "Ismail Chaudhry — Operations, Systems & Automation Engineer",
-    description: "Operations, Systems & Automation Engineer focused on preserving intent from idea to implementation — so execution doesn't drift.",
+    title: "Operations, Systems & Automation Engineer | Portfolio of Ismail Chaudhry",
+    description: "Systems Engineer specializing in Operational Automation and Business Logic. Preserving intent from idea to implementation — Zero Drift.",
     type: "website",
   },
 };
@@ -28,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${newsreader.variable}`}>
+      <body className={`${newsreader.variable} ${jetbrainsMono.variable}`}>
         <Nav />
         <main className="pt-20">{children}</main>
         <Footer />

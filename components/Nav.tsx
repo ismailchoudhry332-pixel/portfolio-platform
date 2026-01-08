@@ -23,8 +23,8 @@ export default function Nav() {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-background border-b border-border z-50">
       <div className="max-w-[1200px] mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="text-xl font-serif">
-          Ismail
+        <Link href="/" className="text-xl font-mono text-accent-cyan">
+          Ismail Chaudhry Portfolio
         </Link>
 
         {/* Desktop Navigation */}
@@ -33,11 +33,10 @@ export default function Nav() {
             <Link
               key={item.href}
               href={item.href}
-              className={`transition-colors duration-150 ${
-                isActive(item.href)
+              className={`transition-colors duration-150 ${isActive(item.href)
                   ? "text-foreground"
                   : "text-accent hover:text-foreground"
-              }`}
+                }`}
             >
               {item.label}
             </Link>
@@ -78,11 +77,10 @@ export default function Nav() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`text-lg transition-colors duration-150 ${
-                  isActive(item.href)
+                className={`text-lg transition-colors duration-150 ${isActive(item.href)
                     ? "text-foreground"
                     : "text-accent hover:text-foreground"
-                }`}
+                  }`}
               >
                 {item.label}
               </Link>

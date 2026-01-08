@@ -5,38 +5,70 @@ import CTA from "@/components/CTA";
 export default function CaseStudies() {
   return (
     <div className="min-h-screen">
-      {/* Flagship Case Study Preview */}
+      {/* Flagship Case Studies Preview */}
       <section className="max-w-[1200px] mx-auto px-6 pt-[120px] pb-20">
         <div className="max-w-[680px]">
-          <h1 className="text-6xl mb-20">Case Studies</h1>
+          <h1 className="text-5xl mb-20">Case Studies</h1>
 
-          <p className="text-sm uppercase tracking-wide text-accent-light mb-8">Flagship</p>
-          
+          <p className="text-sm uppercase tracking-wide text-accent-cyan mb-8 font-mono">Flagship 01</p>
+
           {/* Featured block with visual distinction */}
-          <div className="bg-[#F8F8F8] border-l-2 border-[#DDDDDD] pl-8 pr-8 py-10 -ml-2">
-            <h2 className="text-4xl mb-6 font-bold">
+          <div className="terminal-border bg-black/30 border-l-2 border-accent-purple pl-8 pr-8 py-10 mb-16">
+            <h2 className="text-3xl mb-6 font-bold">
               Turning Pricing From a Bottleneck Into an Operational System
             </h2>
-            <p className="text-lg mb-10 leading-relaxed">
+            <p className="text-lg mb-10 leading-relaxed text-foreground-muted">
               Pricing logic was locked in developer-managed code. Operational teams were accountable for outcomes but had no control over the logic producing them.
             </p>
             <ul className="space-y-4 mb-12 ml-6">
               <li className="flex items-start">
-                <span className="mr-4 text-accent">•</span>
+                <span className="mr-4 text-accent-cyan">→</span>
                 <span className="text-lg">Lead-to-quote time dropped from hours to seconds</span>
               </li>
               <li className="flex items-start">
-                <span className="mr-4 text-accent">•</span>
+                <span className="mr-4 text-accent-cyan">→</span>
                 <span className="text-lg">~40% operational capacity increase with same headcount</span>
               </li>
               <li className="flex items-start">
-                <span className="mr-4 text-accent">•</span>
+                <span className="mr-4 text-accent-cyan">→</span>
                 <span className="text-lg">Pricing parity enforced — identical journeys, identical prices</span>
               </li>
             </ul>
             <Link
               href="/case-studies/flagship"
-              className="inline-block px-8 py-3 border-2 border-foreground text-foreground hover:bg-foreground hover:text-background transition-colors duration-150"
+              className="inline-block px-8 py-3 terminal-border text-accent-cyan hover:bg-accent-cyan hover:text-background transition-colors duration-150 font-mono"
+            >
+              Read full case study
+            </Link>
+          </div>
+
+          <p className="text-sm uppercase tracking-wide text-accent-purple mb-8 font-mono">Flagship 02</p>
+
+          {/* Second Flagship: Luxury Watch */}
+          <div className="terminal-border bg-black/30 border-l-2 border-accent-cyan pl-8 pr-8 py-10">
+            <h2 className="text-3xl mb-6 font-bold">
+              The Luxury Watch Accounting Architecture
+            </h2>
+            <p className="text-lg mb-10 leading-relaxed text-foreground-muted">
+              How a custom-engineered Notion ecosystem replaced manual financial tracking for a US-based luxury watch brand, achieving 100% data parity and real-time P&L visibility.
+            </p>
+            <ul className="space-y-4 mb-12 ml-6">
+              <li className="flex items-start">
+                <span className="mr-4 text-accent-purple">→</span>
+                <span className="text-lg">100% pricing parity across all sales channels</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-4 text-accent-purple">→</span>
+                <span className="text-lg">Financial reporting reduced from hours to seconds</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-4 text-accent-purple">→</span>
+                <span className="text-lg">90-Day Execution Plan for scalable operations</span>
+              </li>
+            </ul>
+            <Link
+              href="/case-studies/luxury-watch"
+              className="inline-block px-8 py-3 terminal-border text-accent-purple hover:bg-accent-purple hover:text-background transition-colors duration-150 font-mono"
             >
               Read full case study
             </Link>
@@ -45,7 +77,7 @@ export default function CaseStudies() {
       </section>
 
       {/* Supporting Case Studies (Accordions) */}
-      <section className="max-w-[1200px] mx-auto px-6 pt-24 pb-16 mt-20 border-t border-[#E0E0E0]">
+      <section className="max-w-[1200px] mx-auto px-6 pt-24 pb-16 mt-20 border-t border-border">
         <div className="max-w-[680px]">
           <p className="text-sm uppercase tracking-wide text-accent-light mb-12">Additional Work</p>
 

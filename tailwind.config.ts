@@ -9,13 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#FAFAFA",
-        foreground: "#1A1A1A",
-        "foreground-muted": "#2A2A2A",
-        accent: "#666666",
-        "accent-light": "#999999",
-        signal: "#4338ca",
-        border: "#E5E5E5",
+        background: "#121212",
+        foreground: "#FAFAFA",
+        "foreground-muted": "#CCCCCC",
+        accent: "#888888",
+        "accent-light": "#AAAAAA",
+        "accent-cyan": "#00FFFF",
+        "accent-purple": "#BB86FC",
+        border: "#333333",
+        "border-light": "#444444",
       },
       fontFamily: {
         sans: [
@@ -28,6 +30,7 @@ const config: Config = {
           "sans-serif",
         ],
         serif: ["var(--font-newsreader)", "serif"],
+        mono: ["var(--font-jetbrains)", "monospace"],
       },
       maxWidth: {
         prose: "680px",

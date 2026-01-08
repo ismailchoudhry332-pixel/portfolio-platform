@@ -9,18 +9,17 @@ export default function Home() {
       <section className="max-w-[1200px] mx-auto px-6 pt-[120px] pb-[120px]">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-6xl md:text-7xl mb-8">
-              Most projects don't fail in code. They fail in translation.
+            <h1 className="text-5xl md:text-6xl mb-8">
+              Operations, Systems & Automation Engineer | Portfolio of Ismail Chaudhry
             </h1>
-            <p className="text-xl mb-12" style={{ color: 'rgba(26, 26, 26, 0.80)' }}>
-              Operations, Systems & Automation Engineer focused on preserving intent
-              from idea to implementation — so execution doesn't drift.
+            <p className="text-xl mb-12 text-foreground-muted">
+              Preserving intent from idea to implementation — <span className="text-accent-cyan">Zero Drift</span>.
             </p>
             <CTA />
           </div>
           <div className="relative">
-            <div className="rounded-2xl overflow-hidden border border-[#E5E5E5] bg-white p-2 shadow-sm">
-              <img src="/hero-portrait.png" alt="Ismail Chaudhry" className="w-full h-auto rounded-xl" />
+            <div className="terminal-border rounded-lg overflow-hidden bg-black/50 p-2">
+              <img src="/hero-portrait.png" alt="Ismail Chaudhry, Systems Engineer specializing in Operational Automation and Business Logic." className="w-full h-auto rounded-md" />
             </div>
           </div>
         </div>
@@ -38,35 +37,35 @@ export default function Home() {
       </section>
 
       {/* Featured Case Study Preview - with visual distinction */}
-      <section className="max-w-[1200px] mx-auto px-6 py-20 mt-20 border-t border-[#E0E0E0]">
+      <section className="max-w-[1200px] mx-auto px-6 py-20 mt-20 border-t border-border">
         <div className="max-w-[680px]">
-          <p className="text-sm uppercase tracking-wide text-accent-light mb-8">Featured Case Study</p>
+          <p className="text-sm uppercase tracking-wide text-accent-cyan mb-8 font-mono">Featured Case Study</p>
 
           {/* Featured block with left border and background */}
-          <div className="bg-[#F8F8F8] border-l-2 border-[#DDDDDD] pl-8 pr-8 py-10 -ml-2">
+          <div className="terminal-border bg-black/30 border-l-2 border-accent-purple pl-8 pr-8 py-10">
             <h2 className="text-4xl mb-6">
               Turning Pricing From a Bottleneck Into an Operational System
             </h2>
-            <p className="text-lg mb-10 leading-relaxed">
+            <p className="text-lg mb-10 leading-relaxed text-foreground-muted">
               Pricing logic was locked in developer-managed code. Operational teams were accountable for outcomes but had no control over the logic producing them.
             </p>
             <ul className="space-y-4 mb-12 ml-6">
               <li className="flex items-start">
-                <span className="mr-4 text-accent">•</span>
+                <span className="mr-4 text-accent-cyan">→</span>
                 <span className="text-lg">Lead-to-quote time dropped from hours to seconds</span>
               </li>
               <li className="flex items-start">
-                <span className="mr-4 text-accent">•</span>
+                <span className="mr-4 text-accent-cyan">→</span>
                 <span className="text-lg">~40% operational capacity increase with same headcount</span>
               </li>
               <li className="flex items-start">
-                <span className="mr-4 text-accent">•</span>
+                <span className="mr-4 text-accent-cyan">→</span>
                 <span className="text-lg">Pricing parity enforced — identical journeys, identical prices</span>
               </li>
             </ul>
             <Link
               href="/case-studies/flagship"
-              className="inline-block text-foreground hover:text-accent transition-colors duration-150 border-b-2 border-foreground hover:border-accent pb-1"
+              className="inline-block text-accent-cyan hover:text-accent-purple transition-colors duration-150 border-b border-accent-cyan hover:border-accent-purple pb-1 font-mono"
             >
               Read case study →
             </Link>
@@ -84,13 +83,13 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Card 1 */}
-            <div className="group p-8 rounded-xl border border-[#E5E5E5] bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-              <h3 className="text-xl font-bold mb-3 group-hover:text-signal transition-colors">Pricing Engine</h3>
-              <p className="text-accent mb-6 leading-relaxed">
+            <div className="group p-8 terminal-border rounded-lg bg-black/20 hover:bg-black/40 hover:-translate-y-1 transition-all duration-300">
+              <h3 className="text-xl font-bold mb-3 group-hover:text-accent-cyan transition-colors font-mono">Pricing Engine</h3>
+              <p className="text-foreground-muted mb-6 leading-relaxed">
                 Pricing & quotation engine for a UK transport operation.
               </p>
-              <div className="pt-4 border-t border-dashed border-[#E5E5E5]">
-                <span className="text-sm font-medium text-signal">Outcome →</span>
+              <div className="pt-4 border-t border-dashed border-border">
+                <span className="text-sm font-medium text-accent-purple font-mono">Outcome →</span>
                 <p className="text-sm mt-1 text-accent-light">Removed manual quoting, enforced parity.</p>
               </div>
             </div>
