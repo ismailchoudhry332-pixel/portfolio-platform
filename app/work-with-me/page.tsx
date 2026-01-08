@@ -87,35 +87,14 @@ export default function WorkWithMe() {
           </ul>
         </section>
 
-        {/* Calendly Embed Placeholder */}
+        {/* Calendly Inline Widget */}
         <section className="mb-20 pt-12 border-t border-[#E0E0E0]">
           <h2 className="text-3xl mb-10 font-bold">Book a Fit Check</h2>
-          <div className="bg-[#F8F8F8] border-l-2 border-[#DDDDDD] p-10">
-            <p className="text-lg mb-4">
-              Calendly embed will be placed here
-            </p>
-            <p className="text-base text-accent">
-              (Embed code to be added with your Calendly account details)
-            </p>
-            <div className="mt-10 text-left space-y-4">
-              <p className="text-base">
-                <strong>Implementation note:</strong>
-              </p>
-              <p className="text-sm text-accent">
-                Replace this placeholder with your Calendly embed code. Example:
-              </p>
-              <pre className="text-xs bg-white p-4 rounded overflow-x-auto border border-[#E0E0E0]">
-{`<div
-  className="calendly-inline-widget"
-  data-url="https://calendly.com/your-link?hide_event_type_details=1&hide_gdpr_banner=1"
-  style={{ minWidth: "320px", height: "700px" }}
-/>`}
-              </pre>
-              <p className="text-sm text-accent">
-                Don't forget to add the Calendly script to your layout or this page.
-              </p>
-            </div>
-          </div>
+          <div
+            className="calendly-inline-widget"
+            data-url="https://calendly.com/ismailchoudhry332?hide_landing_page_details=1&hide_gdpr_banner=1"
+            style={{ minWidth: '320px', height: '700px' }}
+          />
         </section>
 
         {/* Employment Opportunities */}
