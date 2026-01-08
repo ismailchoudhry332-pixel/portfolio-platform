@@ -86,7 +86,7 @@ export default function WorkWithMe() {
         </section>
 
         {/* Calendly Embed Placeholder */}
-        <section className="mb-16 pt-12 border-t border-[#E0E0E0]">
+        <section className="mb-20 pt-12 border-t border-[#E0E0E0]">
           <h2 className="text-3xl mb-10 font-bold">Book a Fit Check</h2>
           <div className="bg-[#F8F8F8] border-l-2 border-[#DDDDDD] p-10">
             <p className="text-lg mb-4">
@@ -112,6 +112,41 @@ export default function WorkWithMe() {
               <p className="text-sm text-accent">
                 Don't forget to add the Calendly script to your layout or this page.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Employment Opportunities */}
+        <section className="pt-12 border-t border-[#E0E0E0]">
+          <h2 className="text-3xl mb-8 font-bold">Exploring full-time or contract opportunities?</h2>
+          <p className="text-lg mb-8 leading-relaxed">
+            I'm open to the right role — operational systems engineering, internal tooling,
+            or workflow automation in teams where clarity and ownership matter.
+          </p>
+
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm text-accent mb-2">Email</p>
+              <a
+                href="mailto:ismailchoudhry332@gmail.com"
+                className="text-lg hover:text-accent transition-colors duration-150 inline-flex items-center gap-2"
+              >
+                ismailchoudhry332@gmail.com
+                <span className="text-sm">↗</span>
+              </a>
+            </div>
+
+            <div>
+              <p className="text-sm text-accent mb-2">LinkedIn</p>
+              <a
+                href="https://www.linkedin.com/in/ismail-chaudhry-022842142/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg hover:text-accent transition-colors duration-150 inline-flex items-center gap-2"
+              >
+                linkedin.com/in/ismail-chaudhry-022842142
+                <span className="text-sm">↗</span>
+              </a>
             </div>
           </div>
         </section>
