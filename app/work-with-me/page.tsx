@@ -1,15 +1,13 @@
-import CalendlyBadge from "@/components/CalendlyBadge";
+"use client";
 
-export const metadata = {
-  title: "Work With Me | Ismail Chaudhry",
-  description: "Book a 15-minute fit check to discuss execution challenges and see if we're a good match.",
-};
+import { InlineWidget } from "react-calendly";
+import { Mail, Linkedin } from "lucide-react";
 
 export default function WorkWithMe() {
   return (
     <div className="min-h-screen">
       <div className="max-w-[680px] mx-auto px-6 pt-[120px] pb-24">
-        <h1 className="text-6xl mb-20">Work With Me</h1>
+        <h1 className="text-6xl mb-20 font-bold">Work With Me</h1>
 
         {/* What This Call Is */}
         <section className="mb-20">
@@ -90,11 +88,12 @@ export default function WorkWithMe() {
         {/* Calendly Inline Widget */}
         <section className="mb-20 pt-12 border-t border-[#E0E0E0]">
           <h2 className="text-3xl mb-10 font-bold">Book a Fit Check</h2>
-          <div
-            className="calendly-inline-widget"
-            data-url="https://calendly.com/ismailchoudhry332?hide_landing_page_details=1&hide_gdpr_banner=1"
-            style={{ minWidth: '320px', height: '700px' }}
-          />
+          <div className="border border-[#E0E0E0] rounded-lg overflow-hidden shadow-sm bg-white">
+            <InlineWidget
+              url="https://calendly.com/ismailchoudhry332?hide_landing_page_details=1&hide_gdpr_banner=1"
+              styles={{ height: '700px', minWidth: '320px' }}
+            />
+          </div>
         </section>
 
         {/* Employment Opportunities */}
@@ -110,8 +109,11 @@ export default function WorkWithMe() {
               <p className="text-sm text-accent mb-2">Email</p>
               <a
                 href="mailto:ismailchoudhry332@gmail.com"
-                className="text-lg hover:text-accent transition-colors duration-150 inline-flex items-center gap-2"
+                className="group text-lg hover:text-accent transition-colors duration-150 inline-flex items-center gap-2"
               >
+                <div className="p-1.5 rounded-full bg-[#f0f0f0] group-hover:bg-[#eaeaea] transition-colors">
+                  <Mail className="w-4 h-4" />
+                </div>
                 ismailchoudhry332@gmail.com
                 <span className="text-sm">↗</span>
               </a>
@@ -123,8 +125,11 @@ export default function WorkWithMe() {
                 href="https://www.linkedin.com/in/ismail-chaudhry-022842142/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg hover:text-accent transition-colors duration-150 inline-flex items-center gap-2"
+                className="group text-lg hover:text-accent transition-colors duration-150 inline-flex items-center gap-2"
               >
+                <div className="p-1.5 rounded-full bg-[#f0f0f0] group-hover:bg-[#eaeaea] transition-colors">
+                  <Linkedin className="w-4 h-4" />
+                </div>
                 linkedin.com/in/ismail-chaudhry-022842142
                 <span className="text-sm">↗</span>
               </a>
@@ -132,8 +137,6 @@ export default function WorkWithMe() {
           </div>
         </section>
       </div>
-
-      <CalendlyBadge />
     </div>
   );
 }

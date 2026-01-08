@@ -2,19 +2,24 @@
 
 Personal portfolio for an Operations, Systems & Automation Engineer. Content-first, judgment-driven site built on the principle: **Interaction exists to reveal meaning — not to impress.**
 
-## Phase 1 Complete — Foundation
+# Portfolio Platform — Ismail Chaudhry
 
-All core pages built with placeholder content:
-- Home (hero, featured case study preview, How I Work)
-- Case Studies (flagship preview + 2 accordion case studies)
-- Case Studies / Flagship (dedicated deep-dive page)
-- About (experience section with 3 placeholder entries)
-- Work With Me (Calendly embed placeholder)
+Personal portfolio for an Operations, Systems & Automation Engineer. Content-first, judgment-driven site built on the principle: **Interaction exists to reveal meaning — not to impress.**
+
+## Phase 2 Complete — Enhancements
+
+Key Improvements:
+- **Full-Width Footer**: Replaced constrained layout with a standard 1200px container.
+- **Enhanced Contact**: Added visual icons (Email, Phone, LinkedIn) via `lucide-react`.
+- **Reliable Booking**: Switched from raw embed to `react-calendly` for stable loading.
+- **Visual Depth**: Added subtle background texture to remove the "flat" feel.
 
 ## Tech Stack
 
 - **Framework:** Next.js 15 (App Router)
-- **Styling:** Tailwind CSS v4 (CSS-based config)
+- **Styling:** Tailwind CSS v3.4
+- **Icons:** Lucide React
+- **Integration:** React Calendly
 - **Content:** MDX support configured
 - **Hosting:** Vercel
 

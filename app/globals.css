@@ -16,6 +16,8 @@
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-image: radial-gradient(#E5E7EB 1px, transparent 1px);
+    background-size: 32px 32px;
   }
 
   h1 {

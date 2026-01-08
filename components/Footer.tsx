@@ -1,70 +1,68 @@
 import Link from "next/link";
+import { Mail, Phone, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="border-t border-[#E0E0E0] bg-background">
-      <div className="max-w-[1200px] mx-auto px-6 py-20">
-        {/* Contact Block */}
-        <div className="max-w-[680px]">
-          <h3 className="text-2xl font-bold mb-8">Get in touch</h3>
-
-          <div className="space-y-6 mb-12">
-            {/* Email */}
-            <div>
-              <p className="text-sm text-accent mb-2">Email</p>
-              <a
-                href="mailto:ismailchoudhry332@gmail.com"
-                className="text-lg hover:text-accent transition-colors duration-150 inline-flex items-center gap-2"
+      <div className="max-w-[1200px] mx-auto px-6 py-12 md:py-20">
+        <div className="flex flex-col md:flex-row justify-between items-start gap-12">
+          
+          {/* Contact Block */}
+          <div>
+            <h3 className="text-2xl font-bold mb-6">Get in touch</h3>
+            
+            <div className="flex flex-col space-y-4">
+              <a 
+                href="mailto:ismailchoudhry332@gmail.com" 
+                className="group flex items-center gap-3 text-lg hover:text-accent transition-colors duration-200"
               >
-                ismailchoudhry332@gmail.com
-                <span className="text-sm">↗</span>
+                <div className="p-2 rounded-full bg-[#f0f0f0] group-hover:bg-[#eaeaea] transition-colors">
+                  <Mail className="w-5 h-5" />
+                </div>
+                <span>ismailchoudhry332@gmail.com</span>
               </a>
-            </div>
 
-            {/* Phone */}
-            <div>
-              <p className="text-sm text-accent mb-2">Phone</p>
-              <a
-                href="tel:+923109169087"
-                className="text-lg hover:text-accent transition-colors duration-150 inline-flex items-center gap-2"
+              <a 
+                href="tel:+923109169087" 
+                className="group flex items-center gap-3 text-lg hover:text-accent transition-colors duration-200"
               >
-                +92 310 9169087
-                <span className="text-sm">↗</span>
+                 <div className="p-2 rounded-full bg-[#f0f0f0] group-hover:bg-[#eaeaea] transition-colors">
+                  <Phone className="w-5 h-5" />
+                </div>
+                <span>+92 310 9169087</span>
               </a>
-            </div>
 
-            {/* LinkedIn */}
-            <div>
-              <p className="text-sm text-accent mb-2">LinkedIn</p>
-              <a
-                href="https://www.linkedin.com/in/ismail-chaudhry-022842142/"
-                target="_blank"
+              <a 
+                href="https://www.linkedin.com/in/ismail-chaudhry-022842142/" 
+                target="_blank" 
                 rel="noopener noreferrer"
-                className="text-lg hover:text-accent transition-colors duration-150 inline-flex items-center gap-2"
+                className="group flex items-center gap-3 text-lg hover:text-accent transition-colors duration-200"
               >
-                linkedin.com/in/ismail-chaudhry-022842142
-                <span className="text-sm">↗</span>
+                 <div className="p-2 rounded-full bg-[#f0f0f0] group-hover:bg-[#eaeaea] transition-colors">
+                  <Linkedin className="w-5 h-5" />
+                </div>
+                <span>LinkedIn</span>
               </a>
             </div>
           </div>
 
-          {/* Footer Bottom */}
-          <div className="pt-8 border-t border-[#E0E0E0] flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-sm text-accent">
-            <p>© 2026 Ismail Chaudhry</p>
-            <nav className="flex gap-6">
-              <Link href="/" className="hover:text-foreground transition-colors duration-150">
+          {/* Navigation */}
+          <div className="flex flex-col md:items-end">
+             <nav className="flex flex-wrap gap-6 md:gap-8 mb-6">
+              <Link href="/" className="hover:text-foreground text-accent transition-colors duration-200">
                 Home
               </Link>
-              <Link href="/case-studies" className="hover:text-foreground transition-colors duration-150">
+              <Link href="/case-studies" className="hover:text-foreground text-accent transition-colors duration-200">
                 Case Studies
               </Link>
-              <Link href="/about" className="hover:text-foreground transition-colors duration-150">
+              <Link href="/about" className="hover:text-foreground text-accent transition-colors duration-200">
                 About
               </Link>
-              <Link href="/work-with-me" className="hover:text-foreground transition-colors duration-150">
+              <Link href="/work-with-me" className="hover:text-foreground text-accent transition-colors duration-200">
                 Work With Me
               </Link>
             </nav>
+            <p className="text-sm text-accent">© 2026 Ismail Chaudhry. All rights reserved.</p>
           </div>
         </div>
       </div>
