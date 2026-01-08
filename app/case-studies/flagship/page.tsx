@@ -164,14 +164,17 @@ export default function FlagshipCaseStudy() {
         </section>
 
         {/* Pricing System Diagram */}
-        <div className="my-20 flex justify-center">
-          <Image
-            src="/pricing-system-diagram.svg"
-            alt="Pricing system architecture diagram showing flow from customer request through pricing engine to operations"
-            width={680}
-            height={180}
-            priority
-          />
+        <div className="my-20 w-full max-w-full overflow-x-auto">
+          <div className="min-w-[600px] flex justify-center">
+            <Image
+              src="/pricing-system-diagram.svg"
+              alt="Pricing system architecture diagram showing flow from customer request through pricing engine to operations"
+              width={800}
+              height={180}
+              priority
+              className="w-full h-auto"
+            />
+          </div>
         </div>
 
         {/* Implementation Approach */}
