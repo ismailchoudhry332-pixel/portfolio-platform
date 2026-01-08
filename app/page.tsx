@@ -34,7 +34,7 @@ export default function Home() {
       <section className="max-w-[1200px] mx-auto px-6 py-20 mt-20 border-t border-[#E0E0E0]">
         <div className="max-w-[680px]">
           <p className="text-sm uppercase tracking-wide text-accent-light mb-8">Featured Case Study</p>
-          
+
           {/* Featured block with left border and background */}
           <div className="bg-[#F8F8F8] border-l-2 border-[#DDDDDD] pl-8 pr-8 py-10 -ml-2">
             <h2 className="text-4xl mb-6">
@@ -69,56 +69,71 @@ export default function Home() {
 
       {/* Systems I've Shipped - 80px margin */}
       <section className="max-w-[1200px] mx-auto px-6 py-20 mt-20 border-t border-[#E0E0E0]">
-        <div className="max-w-[680px]">
-          <h2 className="text-3xl mb-8 font-bold">Systems I've Shipped</h2>
-          <p className="text-lg mb-12 text-accent">
+        <div className="max-w-[1200px]">
+          <h2 className="text-3xl mb-8 font-bold font-serif">Systems I've Shipped</h2>
+          <p className="text-lg mb-12 text-accent max-w-[680px]">
             Not concepts. Not experiments. Systems used in live operations.
           </p>
 
-          <div className="space-y-8">
-            <div>
-              <p className="text-lg mb-2">
-                • Pricing & quotation engine for a UK transport operation
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Card 1 */}
+            <div className="group p-8 rounded-xl border border-[#E5E5E5] bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+              <h3 className="text-xl font-bold mb-3 group-hover:text-signal transition-colors">Pricing Engine</h3>
+              <p className="text-accent mb-6 leading-relaxed">
+                Pricing & quotation engine for a UK transport operation.
               </p>
-              <p className="text-base text-accent-light ml-4 leading-relaxed">
-                → Removed manual quoting, enforced pricing parity, exposed margin leakage
-              </p>
+              <div className="pt-4 border-t border-dashed border-[#E5E5E5]">
+                <span className="text-sm font-medium text-signal">Outcome →</span>
+                <p className="text-sm mt-1 text-accent-light">Removed manual quoting, enforced parity.</p>
+              </div>
             </div>
 
-            <div>
-              <p className="text-lg mb-2">
-                • Operations admin panel for non-technical teams
+            {/* Card 2 */}
+            <div className="group p-8 rounded-xl border border-[#E5E5E5] bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+              <h3 className="text-xl font-bold mb-3 group-hover:text-signal transition-colors">Operations Panel</h3>
+              <p className="text-accent mb-6 leading-relaxed">
+                Admin panel allowing business users to control logic without devs.
               </p>
-              <p className="text-base text-accent-light ml-4 leading-relaxed">
-                → Business users controlled logic without developer dependency
-              </p>
+              <div className="pt-4 border-t border-dashed border-[#E5E5E5]">
+                <span className="text-sm font-medium text-signal">Outcome →</span>
+                <p className="text-sm mt-1 text-accent-light">Zero developer dependency for logic changes.</p>
+              </div>
             </div>
 
-            <div>
-              <p className="text-lg mb-2">
-                • Workflow automation integrated with Monday.com
+            {/* Card 3 */}
+            <div className="group p-8 rounded-xl border border-[#E5E5E5] bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+              <h3 className="text-xl font-bold mb-3 group-hover:text-signal transition-colors">Workflow Automation</h3>
+              <p className="text-accent mb-6 leading-relaxed">
+                Deep integration with Monday.com for sales-to-ops handoff.
               </p>
-              <p className="text-base text-accent-light ml-4 leading-relaxed">
-                → Eliminated manual handoffs between sales and operations
-              </p>
+              <div className="pt-4 border-t border-dashed border-[#E5E5E5]">
+                <span className="text-sm font-medium text-signal">Outcome →</span>
+                <p className="text-sm mt-1 text-accent-light">Eliminated manual entry errors entirely.</p>
+              </div>
             </div>
 
-            <div>
-              <p className="text-lg mb-2">
-                • Data dashboards for operational decision-making
+            {/* Card 4 */}
+            <div className="group p-8 rounded-xl border border-[#E5E5E5] bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+              <h3 className="text-xl font-bold mb-3 group-hover:text-signal transition-colors">Data Dashboards</h3>
+              <p className="text-accent mb-6 leading-relaxed">
+                Real-time visualization of operational metrics and KPIs.
               </p>
-              <p className="text-base text-accent-light ml-4 leading-relaxed">
-                → Replaced spreadsheet-driven guesswork with live visibility
-              </p>
+              <div className="pt-4 border-t border-dashed border-[#E5E5E5]">
+                <span className="text-sm font-medium text-signal">Outcome →</span>
+                <p className="text-sm mt-1 text-accent-light">Replaced guesswork with live visibility.</p>
+              </div>
             </div>
 
-            <div>
-              <p className="text-lg mb-2">
-                • Internal tools for call-centre & service operations
+            {/* Card 5 */}
+            <div className="group p-8 rounded-xl border border-[#E5E5E5] bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 md:col-span-2 lg:col-span-1">
+              <h3 className="text-xl font-bold mb-3 group-hover:text-signal transition-colors">Service Tools</h3>
+              <p className="text-accent mb-6 leading-relaxed">
+                Internal tooling for call-center & service workflows.
               </p>
-              <p className="text-base text-accent-light ml-4 leading-relaxed">
-                → Reduced reliance on human memory at handoff points
-              </p>
+              <div className="pt-4 border-t border-dashed border-[#E5E5E5]">
+                <span className="text-sm font-medium text-signal">Outcome →</span>
+                <p className="text-sm mt-1 text-accent-light">Reduced reliance on human memory.</p>
+              </div>
             </div>
           </div>
         </div>

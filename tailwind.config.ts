@@ -14,6 +14,7 @@ const config: Config = {
         "foreground-muted": "#2A2A2A",
         accent: "#666666",
         "accent-light": "#999999",
+        signal: "#4338ca",
         border: "#E5E5E5",
       },
       fontFamily: {
@@ -26,7 +27,7 @@ const config: Config = {
           "Arial",
           "sans-serif",
         ],
-        serif: ["Georgia", "Times New Roman", "serif"],
+        serif: ["var(--font-newsreader)", "serif"],
       },
       maxWidth: {
         prose: "680px",

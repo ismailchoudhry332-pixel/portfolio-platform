@@ -1,7 +1,15 @@
 import type { Metadata } from "next";
+import { Newsreader } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  variable: "--font-newsreader",
+  display: "swap",
+  style: ["normal", "italic"], // Load italic weights too
+});
 
 export const metadata: Metadata = {
   title: "Ismail Chaudhry — Operations, Systems & Automation Engineer",
@@ -20,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${newsreader.variable}`}>
         <Nav />
         <main className="pt-20">{children}</main>
         <Footer />
