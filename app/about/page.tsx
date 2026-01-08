@@ -12,6 +12,9 @@ export default function About() {
         {/* Opening Context */}
         <section className="mb-20">
           <h1 className="text-6xl mb-12">About</h1>
+          <div className="mb-12 rounded-2xl overflow-hidden border border-[#E5E5E5]">
+            <img src="/about-portrait.jpg" alt="Ismail Chaudhry working" className="w-full h-auto object-cover" />
+          </div>
           <p className="text-lg leading-relaxed">
             I build systems that preserve intent from idea to execution — so what
             founders envision actually gets delivered. Most execution failures aren't

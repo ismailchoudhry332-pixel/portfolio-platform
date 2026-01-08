@@ -7,15 +7,22 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section - 120px spacing */}
       <section className="max-w-[1200px] mx-auto px-6 pt-[120px] pb-[120px]">
-        <div className="max-w-[680px]">
-          <h1 className="text-6xl md:text-7xl mb-8">
-            Most projects don't fail in code. They fail in translation.
-          </h1>
-          <p className="text-xl mb-12" style={{ color: 'rgba(26, 26, 26, 0.80)' }}>
-            Operations, Systems & Automation Engineer focused on preserving intent
-            from idea to implementation — so execution doesn't drift.
-          </p>
-          <CTA />
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 className="text-6xl md:text-7xl mb-8">
+              Most projects don't fail in code. They fail in translation.
+            </h1>
+            <p className="text-xl mb-12" style={{ color: 'rgba(26, 26, 26, 0.80)' }}>
+              Operations, Systems & Automation Engineer focused on preserving intent
+              from idea to implementation — so execution doesn't drift.
+            </p>
+            <CTA />
+          </div>
+          <div className="relative">
+            <div className="rounded-2xl overflow-hidden border border-[#E5E5E5] bg-white p-2 shadow-sm">
+              <img src="/hero-portrait.png" alt="Ismail Chaudhry" className="w-full h-auto rounded-xl" />
+            </div>
+          </div>
         </div>
       </section>
 
